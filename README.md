@@ -15,3 +15,14 @@ Last year I built everything in vanilla JavaScript and NodeJS. This year, I'll b
 ### Questions, comments, feedback?
 
 Use the Discussions tab above and share!
+
+## How to run the code
+
+To see this code in action, clone this repo and go into the day you'd like to see. Then run
+
+`npm i`
+
+Once that completes, run the app:
+
+`npm start`
+
