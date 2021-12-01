@@ -12,6 +12,9 @@ I won't be blogging every challenge like I did last year. That ended up being a 
 
 Last year I built everything in vanilla JavaScript and NodeJS. This year, I'll be kicking off in ReactJS. I'm curious to see what can be done in the framework, along with what fun can I have on the UI side. We'll see, I'm no designer.
 
+### Questions, comments, feedback?
+
+Use the Discussions tab above and share!
 
 # Advent of Code Challenges
 
