@@ -15,8 +15,3 @@ Last year I built everything in vanilla JavaScript and NodeJS. This year, I'll b
 ### Questions, comments, feedback?
 
 Use the Discussions tab above and share!
-
-# Advent of Code Challenges
-
-### Day 1 - Coming Soon
-More coming soon!
