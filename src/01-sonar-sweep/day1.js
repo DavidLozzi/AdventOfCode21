@@ -1,8 +1,7 @@
 import React from 'react'
 import input1 from './input1';
-import './App.css';
 
-function App() {
+const Day1 = () => {
   const puzzleInput = input1.split('\n').map(v => v.trim())
   
   const [first, setFirst] = React.useState()
@@ -39,18 +38,16 @@ function App() {
   }, [puzzleInput])
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Puzzle Input</h2>
-        <h3>{puzzleInput.length} numbers</h3>
-        <div dangerouslySetInnerHTML={{ __html: puzzleInput.join('<br/>') }} style={{maxHeight: '400px', overflow: 'scroll'}}></div>
-        <h2>Answer #1</h2>
-        {first}
-        <h2>Answer #2</h2>
-        {second}
-      </header>
+    <div >
+      <h2>Day 1 - Sonar Sweep</h2>
+      <h3>Input: {puzzleInput.length} numbers</h3>
+      <div dangerouslySetInnerHTML={{ __html: puzzleInput.join('<br/>') }} className="puzzle-input"></div>
+      <h2>Answer #1</h2>
+      {first}
+      <h2>Answer #2</h2>
+      {second}
     </div>
   );
 }
 
-export default App;
+export default Day1

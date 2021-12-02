@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container {
+  padding: 10vw;
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  transition: all 200ms ease;
+  max-width: 300px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button:nth-child(even) {
+  background-color: #991f1f;
+  border: 2px solid #991f1f;
+}
+
+button:nth-child(odd) {
+  background-color: #318d31;
+  border: 2px solid #318d31;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #282c34;
+}
+
+.puzzle-input {
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.back-button {
+  padding: 5px 20px;
+}
