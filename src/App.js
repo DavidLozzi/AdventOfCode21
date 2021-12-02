@@ -1,5 +1,6 @@
 import React from 'react';
 import Day1 from './01-sonar-sweep/day1';
+import Day2 from './02-dive/day2';
 
 import './App.css';
 
@@ -11,6 +12,9 @@ function App() {
     switch (selectedDay) {
       case 'day1':
         setSelectedDayComponent(<Day1 />)
+        break;
+      case 'day2':
+        setSelectedDayComponent(<Day2 />)
         break;
       default:
         setSelectedDayComponent(null);

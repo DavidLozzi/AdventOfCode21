@@ -1,12 +1,16 @@
 import React from 'react'
 import input1 from './input1';
 
-const Day1 = () => {
-  const puzzleInput = input1.split('\n').map(v => v.trim())
-  
+const Day1 = () => {  
+  const [puzzleInput, setPuzzleInput] = React.useState([]);
   const [first, setFirst] = React.useState()
   const [second, setSecond] = React.useState()
   
+  // get the input into a usable array
+  React.useEffect(() => {
+    setPuzzleInput(input1.split('\n').map(v => v.trim()))
+  }, [])
+
   // first challenge, find how many times the number increases from the number before it
   React.useEffect(() => {
     setFirst(puzzleInput.reduce((total, current, index) => {
