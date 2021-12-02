@@ -12,6 +12,10 @@ I won't be blogging every challenge like I did last year. That ended up being a 
 
 Last year I built everything in vanilla JavaScript and NodeJS. This year, I'll be kicking off in ReactJS. I'm curious to see what can be done in the framework, along with what fun can I have on the UI side. We'll see, I'm no designer.
 
+## See it in action!
+
+Go to [https://davidlozzi.github.io/AdventOfCode21/](https://davidlozzi.github.io/AdventOfCode21/) to see my progress in React, with my correct answers. If you'd like me to open this up a little more so you can just insert your puzzles, let me know, I'll let you cheat :o.
+
 ### Questions, comments, feedback?
 
 Use the Discussions tab above and share!
