@@ -20,7 +20,7 @@ Each challenge is under the `/src` folder.
 
 ## See other Advent of Code participants!
 
-* [Pythong with John Cardente](https://github.com/jcardente/adventOfCode2021)
+* [Python with John Cardente](https://github.com/jcardente/adventOfCode2021)
 * more coming
 
 ### Questions, comments, feedback?
