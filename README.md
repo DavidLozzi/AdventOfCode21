@@ -16,6 +16,13 @@ Last year I built everything in vanilla JavaScript and NodeJS. This year, I'll b
 
 Go to [https://davidlozzi.github.io/AdventOfCode21/](https://davidlozzi.github.io/AdventOfCode21/) to see my progress in React, with my correct answers. If you'd like me to open this up a little more so you can just insert your puzzles, let me know, I'll let you cheat :o.
 
+Each challenge is under the `/src` folder.
+
+## See other Advent of Code participants!
+
+* [Pythong with John Cardente](https://github.com/jcardente/adventOfCode2021)
+* more coming
+
 ### Questions, comments, feedback?
 
 Use the Discussions tab above and share!

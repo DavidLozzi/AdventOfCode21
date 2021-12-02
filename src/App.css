@@ -8,6 +8,10 @@
   }
 }
 
+h2 {
+  margin: 20px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100px;
@@ -16,9 +20,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  padding: 20px;
 }
 
+.App-header a {
+  color: #39e5f1;
+  font-size: 16px;
+}
 .container {
   padding: 10vw;
 }
@@ -30,6 +39,7 @@
   justify-items: center;
   text-align: center;
   width: 100%;
+  align-items: center;
 }
 
 button {
@@ -39,7 +49,7 @@ button {
   border-radius: 10px;
   border: none;
   transition: all 200ms ease;
-  max-width: 300px;
+  width: 300px;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -66,4 +76,5 @@ button:hover {
 
 .back-button {
   padding: 5px 20px;
+  width: 100px;
 }

@@ -20,6 +20,7 @@ function App() {
   return <div className="App">
     <header className="App-header">
       <h2>Advent of Code 2021</h2>
+      <div><a href="https://twitter.com/davidlozzi" target="_blank" rel="noreferrer">by david lozzi</a> <a href="https://github.com/DavidLozzi/AdventOfCode21">go to code repo</a></div>
     </header>
     <div className="container">
       {selectedDay && <button onClick={() => setSelectedDay('') } className="back-button">Back</button>}
