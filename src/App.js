@@ -22,6 +22,44 @@ function App() {
   }, [selectedDay])
 
   return <div className="App">
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❆
+      </div>
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❆
+      </div>
+      <div class="snowflake">
+      ❅
+      </div>
+      <div class="snowflake">
+      ❆
+      </div>
+      <div class="snowflake">
+        ❅
+      </div>
+      <div class="snowflake">
+        ❆
+      </div>
+      <div class="snowflake">
+        ❅
+      </div>
+      <div class="snowflake">
+        ❆
+      </div>
+      <div class="snowflake">
+        ❅
+      </div>
+      <div class="snowflake">
+        ❆
+      </div>
+    </div>
     <header className="App-header">
       <h2>Advent of Code 2021</h2>
       <div><a href="https://twitter.com/davidlozzi" target="_blank" rel="noreferrer">by david lozzi</a> <a href="https://github.com/DavidLozzi/AdventOfCode21">go to code repo</a></div>
