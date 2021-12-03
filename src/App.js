@@ -73,7 +73,7 @@ function App() {
     {selectedDayComponent}
     {!selectedDay && <div className="buttons-wrapper">
         <button onClick={() => setSelectedDay('day1')}>Day 1 - Sonar Sweep</button>
-        <button onClick={() => setSelectedDay('day2')}>Day 2 - Sonar Sweep</button>
+        <button onClick={() => setSelectedDay('day2')}>Day 2 - Dive</button>
         <button onClick={() => setSelectedDay('day3')}>Day 3 - Binary Diagnostic</button>
       </div>}
     </div>
