@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/AdventOfCode21/static/css/main.1b556bda.chunk.css",
-    "main.js": "/AdventOfCode21/static/js/main.3673fe00.chunk.js",
-    "main.js.map": "/AdventOfCode21/static/js/main.3673fe00.chunk.js.map",
+    "main.js": "/AdventOfCode21/static/js/main.a8034b94.chunk.js",
+    "main.js.map": "/AdventOfCode21/static/js/main.a8034b94.chunk.js.map",
     "runtime-main.js": "/AdventOfCode21/static/js/runtime-main.ee107303.js",
     "runtime-main.js.map": "/AdventOfCode21/static/js/runtime-main.ee107303.js.map",
     "static/js/2.baddf1b4.chunk.js": "/AdventOfCode21/static/js/2.baddf1b4.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ee107303.js",
     "static/js/2.baddf1b4.chunk.js",
     "static/css/main.1b556bda.chunk.css",
-    "static/js/main.3673fe00.chunk.js"
+    "static/js/main.a8034b94.chunk.js"
   ]
 }
