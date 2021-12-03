@@ -25,6 +25,15 @@ function App() {
     }
   }, [selectedDay])
 
+  React.useEffect(() => {
+    if (window.location.search) {
+      const params = new URLSearchParams(window.location.search)
+      if (params.get('day')) {
+        setSelectedDay(`day${params.get('day')}`)
+      }
+    }
+  }, [])
+
   return <div className="App">
     <div class="snowflakes" aria-hidden="true">
       <div class="snowflake">
@@ -69,7 +78,7 @@ function App() {
       <div><a href="https://twitter.com/davidlozzi" target="_blank" rel="noreferrer">by david lozzi</a> <a href="https://github.com/DavidLozzi/AdventOfCode21">go to code repo</a></div>
     </header>
     <div className="container">
-      {selectedDay && <button onClick={() => setSelectedDay('') } className="back-button">Back</button>}
+      {selectedDay && <button onClick={() => setSelectedDay('') } className="smaller">Back</button>}
     {selectedDayComponent}
     {!selectedDay && <div className="buttons-wrapper">
         <button onClick={() => setSelectedDay('day1')}>Day 1 - Sonar Sweep</button>

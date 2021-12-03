@@ -1,12 +1,44 @@
 import React from 'react'
 import input1 from './input1';
+import './submarine.css'
 
 const Day2 = () => {
   const [puzzleInput, setPuzzleInput] = React.useState([])
   const [prepData, setPrepData] = React.useState([])
   const [first, setFirst] = React.useState()
   const [second, setSecond] = React.useState()
+  const [showAnimate, setShowAnimate] = React.useState(false)
 
+  const subRef = React.useRef()
+  const [subX, setSubX] = React.useState(0)
+  const [subY, setSubY] = React.useState(0)
+
+  const animate = () => {
+    setShowAnimate(true)
+    let top = 170
+    let left = 0
+    const xRatio = (window.innerWidth - subRef.current.offsetWidth - left) / totalX;
+    const yRatio = (window.innerHeight - subRef.current.offsetHeight - top) / (totalY * -1);
+    subRef.current.style.top = `${top}px`
+    subRef.current.style.left = `${left}px`
+    let counter = 0
+    const moveSubmarine = () => {
+      if (counter < prepData.length) {
+        setTimeout(() => {
+          const p = prepData[counter]
+          setSubX(x => x + p.x)
+          setSubY(y => y + p.y)
+          top += p.y * -1 * yRatio
+          left += p.x * xRatio
+          subRef.current.style.top = `${top}px`
+          subRef.current.style.left = `${left}px`
+          counter += 1
+          moveSubmarine()
+        }, 30)
+      }
+    }
+    moveSubmarine()
+  }
   // prep the data so we can use it
   React.useEffect(() => {
     const _input = input1.split('\n').map(v => v.trim())
@@ -86,12 +118,16 @@ const Day2 = () => {
   return (
     <div>
       <h2>Day 2 - Dive</h2>
-      <h3>Input: {puzzleInput.length} coordinates</h3>
-      <div dangerouslySetInnerHTML={{ __html: puzzleInput.join('<br/>') }} className="puzzle-input"></div>
       <h2>Answer #1</h2>
       {totalX} horizontal x {totalY} depth = {first}
+      <div>
+        {!showAnimate && <button onClick={animate} className="smaller">animate</button>}
+        <div className="submarine" ref={subRef} style={{ visibility: showAnimate ? 'visible' : 'hidden' }}>sub {subX}x{subY}</div>
+      </div>
       <h2>Answer #2</h2>
       {totalX2} horizontal x {totalY2} depth = {second} (with an aim of {totalAim})
+      <h3>Input: {puzzleInput.length} coordinates</h3>
+      <div dangerouslySetInnerHTML={{ __html: puzzleInput.join('<br/>') }} className="puzzle-input"></div>
     </div>
   );
 }

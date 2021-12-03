@@ -1,0 +1,14 @@
+.submarine {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #555;
+  color: #fff;
+  font-size: 12px;
+  transition: all 300ms ease-in-out;
+}
