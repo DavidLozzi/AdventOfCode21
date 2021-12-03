@@ -1,11 +1,9 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App {
+  text-align: center;
 }
 
 h2 {
@@ -22,6 +20,7 @@ h2 {
   font-size: calc(10px + 2vmin);
   color: #fff;
   padding: 20px;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .App-header a {
@@ -49,9 +48,11 @@ button {
   border-radius: 10px;
   border: none;
   transition: all 200ms ease;
-  width: 300px;
+  width: 350px;
   margin-bottom: 20px;
   cursor: pointer;
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 20px;
 }
 
 button:nth-child(even) {
@@ -77,6 +78,9 @@ button:hover {
 .smaller {
   padding: 5px 20px;
   width: 100px;
+  font-size: 14px;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
 }
 
 /* snowflakes from https://pajasevi.github.io/CSSnowflakes/ */
