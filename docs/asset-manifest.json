@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AdventOfCode21/static/css/main.36a249df.chunk.css",
+    "main.css": "/AdventOfCode21/static/css/main.079bd763.chunk.css",
     "main.js": "/AdventOfCode21/static/js/main.ba78efa6.chunk.js",
     "main.js.map": "/AdventOfCode21/static/js/main.ba78efa6.chunk.js.map",
     "runtime-main.js": "/AdventOfCode21/static/js/runtime-main.068020c7.js",
@@ -10,13 +10,13 @@
     "static/js/3.2ce1e4e2.chunk.js": "/AdventOfCode21/static/js/3.2ce1e4e2.chunk.js",
     "static/js/3.2ce1e4e2.chunk.js.map": "/AdventOfCode21/static/js/3.2ce1e4e2.chunk.js.map",
     "index.html": "/AdventOfCode21/index.html",
-    "static/css/main.36a249df.chunk.css.map": "/AdventOfCode21/static/css/main.36a249df.chunk.css.map",
+    "static/css/main.079bd763.chunk.css.map": "/AdventOfCode21/static/css/main.079bd763.chunk.css.map",
     "static/js/2.baddf1b4.chunk.js.LICENSE.txt": "/AdventOfCode21/static/js/2.baddf1b4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.068020c7.js",
     "static/js/2.baddf1b4.chunk.js",
-    "static/css/main.36a249df.chunk.css",
+    "static/css/main.079bd763.chunk.css",
     "static/js/main.ba78efa6.chunk.js"
   ]
 }
