@@ -21,6 +21,7 @@ Each challenge is under the `/src` folder.
 ## See other Advent of Code participants!
 
 * [Python with John Cardente](https://github.com/jcardente/adventOfCode2021)
+* [ReactJS with Connor Tyrrell](https://github.com/angusmccloud/aoc2021)
 * more coming
 
 ### Questions, comments, feedback?
