@@ -1,6 +1,7 @@
 import React from 'react';
 import Day1 from './01-sonar-sweep/day1';
 import Day2 from './02-dive/day2';
+import Day3 from './03-binary-diagnostic/day3';
 
 import './App.css';
 
@@ -15,6 +16,9 @@ function App() {
         break;
       case 'day2':
         setSelectedDayComponent(<Day2 />)
+        break;
+      case 'day3':
+        setSelectedDayComponent(<Day3 />)
         break;
       default:
         setSelectedDayComponent(null);
@@ -70,6 +74,7 @@ function App() {
     {!selectedDay && <div className="buttons-wrapper">
         <button onClick={() => setSelectedDay('day1')}>Day 1 - Sonar Sweep</button>
         <button onClick={() => setSelectedDay('day2')}>Day 2 - Sonar Sweep</button>
+        <button onClick={() => setSelectedDay('day3')}>Day 3 - Binary Diagnostic</button>
       </div>}
     </div>
  </div>
