@@ -28,7 +28,7 @@
       "  }, [puzzleInput])",
       "",
       "  return (",
-      "    <div>",
+      "    <div className=\"day\">",
       "      <h2>Day $1 - $2</h2>",
       "      <h2>Answer #1</h2>",
       "      {first}",

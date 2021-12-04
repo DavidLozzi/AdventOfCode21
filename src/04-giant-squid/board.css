@@ -1,0 +1,34 @@
+.board {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: solid 1px rgb(206, 206, 206);
+  padding: 3px;
+}
+
+.title {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 2px;
+  font-weight: bold;
+  font-family: 'Fuzzy Bubbles', cursive;
+  color: #991f1f;
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+  width: 100%
+}
+
+.col {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border: solid 1px #318d31;
+}

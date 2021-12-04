@@ -2,6 +2,7 @@ import React from 'react';
 import Day1 from './01-sonar-sweep/day1';
 import Day2 from './02-dive/day2';
 import Day3 from './03-binary-diagnostic/day3';
+import Day4 from './04-giant-squid/day4'
 
 import './App.css';
 
@@ -20,6 +21,9 @@ function App() {
       case 'day3':
         setSelectedDayComponent(<Day3 />)
         break;
+        case 'day4':
+          setSelectedDayComponent(<Day4 />)
+          break;
       default:
         setSelectedDayComponent(null);
     }
@@ -35,41 +39,41 @@ function App() {
   }, [])
 
   return <div className="App">
-    <div class="snowflakes" aria-hidden="true">
-      <div class="snowflake">
+    <div className="snowflakes" aria-hidden="true">
+      <div className="snowflake">
       ❅
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
       ❆
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
       ❅
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
       ❆
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
       ❅
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
       ❆
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
         ❅
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
         ❆
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
         ❅
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
         ❆
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
         ❅
       </div>
-      <div class="snowflake">
+      <div className="snowflake">
         ❆
       </div>
     </div>
@@ -84,6 +88,7 @@ function App() {
         <button onClick={() => setSelectedDay('day1')}>Day 1 - Sonar Sweep</button>
         <button onClick={() => setSelectedDay('day2')}>Day 2 - Dive</button>
         <button onClick={() => setSelectedDay('day3')}>Day 3 - Binary Diagnostic</button>
+        <button onClick={() => setSelectedDay('day4')}>Day 4 - Giant Squid</button>
       </div>}
     </div>
  </div>
