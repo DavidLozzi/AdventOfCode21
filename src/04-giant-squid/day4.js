@@ -72,6 +72,7 @@ const Day4 = () => {
                 return num
               }
             }
+            return null
           })
           if (!retVal) {
             retVal = board.columns.find(col => {
@@ -83,6 +84,7 @@ const Day4 = () => {
                   return num
                 }
               }
+            return null
             })
           }
           return retVal
@@ -120,6 +122,7 @@ const Day4 = () => {
                 board.winning = true
               }
             }
+            return null
           })
           if (!retVal) {
             retVal = board.columns.find(col => {
@@ -134,6 +137,7 @@ const Day4 = () => {
                   board.winning = true
                 }
               }
+              return null
             })
           }
           return retVal
