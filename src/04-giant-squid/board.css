@@ -31,4 +31,29 @@
   align-content: center;
   justify-content: center;
   border: solid 1px #318d31;
+  position: relative;
+}
+
+.bingo-chip {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  background-color: rgba(1, 122, 21, 0.8);
+  display: none;
+  border-radius: 15px;
+  line-height: 0;
+}
+.match {
+  display: block
+}
+
+
+.bingo {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #c91010;
+  font-size: 18px;
 }

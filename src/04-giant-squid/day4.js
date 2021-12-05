@@ -11,6 +11,8 @@ const Day4 = () => {
   const [lastBoard, setLastBoard] = React.useState(null)
   const [first, setFirst] = React.useState()
   const [second, setSecond] = React.useState()
+  const [firstWinningNumber, setFirstWinningNumber] = React.useState(0)
+  const [secondWinningNumber, setSecondWinningNumber] = React.useState(0)
 
   // get the input into boards
   React.useEffect(() => {
@@ -95,6 +97,7 @@ const Day4 = () => {
       console.log('unmarked total', unmarkedTotal)
       setFirst(unmarkedTotal * _winningNum)
       setWinningBoard(_winningBoard)
+      setFirstWinningNumber(_winningNum)
     }
   }, [bingoNumbers, boards])
 
@@ -147,6 +150,7 @@ const Day4 = () => {
       const unmarkedTotal = _winningBoard.totalValue - _winningBoard.matchValue
       setLastBoard(_winningBoard)
       setSecond(unmarkedTotal * _winningNum)
+      setSecondWinningNumber(_winningNum)
     }
   }, [first, bingoNumbers, boards])
 
@@ -155,10 +159,10 @@ const Day4 = () => {
       <h2>Day 4 - Giant Squid</h2>
       <h2>Answer #1</h2>
       {first} Winning Board Final Score
-      {winningBoard && <Board board={winningBoard} />}
+      {winningBoard && <Board board={winningBoard} numbers={bingoNumbers} winningNumber={firstWinningNumber} />}
       <h2>Answer #2</h2>
       {second} Last Winning Board Final Score
-      {lastBoard && <Board board={lastBoard} />}
+      {lastBoard && <Board board={lastBoard} numbers={bingoNumbers} winningNumber={secondWinningNumber} />}
       <h3>Input: {input1.length} lines</h3>
       <div dangerouslySetInnerHTML={{ __html: input1.split('\n').join('<br/>') }} className="puzzle-input"></div>
     </div>
