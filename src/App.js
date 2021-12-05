@@ -1,8 +1,9 @@
-import React from 'react';
-import Day1 from './01-sonar-sweep/day1';
-import Day2 from './02-dive/day2';
-import Day3 from './03-binary-diagnostic/day3';
+import React from 'react'
+import Day1 from './01-sonar-sweep/day1'
+import Day2 from './02-dive/day2'
+import Day3 from './03-binary-diagnostic/day3'
 import Day4 from './04-giant-squid/day4'
+import Day5 from './05-hydrothermal-venture/day5'
 
 import './App.css';
 
@@ -21,9 +22,12 @@ function App() {
       case 'day3':
         setSelectedDayComponent(<Day3 />)
         break;
-        case 'day4':
-          setSelectedDayComponent(<Day4 />)
-          break;
+      case 'day4':
+        setSelectedDayComponent(<Day4 />)
+        break;
+      case 'day5':
+        setSelectedDayComponent(<Day5 />)
+        break;
       default:
         setSelectedDayComponent(null);
     }
@@ -89,6 +93,7 @@ function App() {
         <button onClick={() => setSelectedDay('day2')}>Day 2 - Dive</button>
         <button onClick={() => setSelectedDay('day3')}>Day 3 - Binary Diagnostic</button>
         <button onClick={() => setSelectedDay('day4')}>Day 4 - Giant Squid</button>
+        <button onClick={() => setSelectedDay('day5')}>Day 5 - Hydrothermal Venture</button>
       </div>}
     </div>
  </div>
