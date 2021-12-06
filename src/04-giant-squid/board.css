@@ -1,3 +1,10 @@
+.board-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 .board {
   display: flex;
   flex-direction: column;
@@ -45,6 +52,7 @@
   border-radius: 15px;
   line-height: 0;
 }
+
 .match {
   display: block
 }
@@ -56,4 +64,21 @@
   letter-spacing: 10px;
   color: #c91010;
   font-size: 18px;
+}
+
+.played-numbers {
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+}
+
+.played-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 12px;
+  border: solid 1px #555;
 }

@@ -3,6 +3,7 @@ import React from 'react';
 const Board = ({ board, numbers, winningNumber }) => {
   const [playedNumbers, setPlayedNumbers] = React.useState([])
   const [currentNumber, setCurrentNumber] = React.useState()
+
   const play = () => {
     let counter = 0
     const playGame = () => {
@@ -21,11 +22,15 @@ const Board = ({ board, numbers, winningNumber }) => {
     }
     playGame()
   }
-  return <div>
+
+  return <div className="board-wrapper">
     <button className="smaller" onClick={play}>Play</button>
     <div>
       {currentNumber !== winningNumber && currentNumber}
       {currentNumber === winningNumber && <span className='bingo'>Bingo!</span>}
+    </div>
+    <div className="played-numbers">
+      {playedNumbers.map(num => <div className="played-num">{num}</div>)}
     </div>
     <div className="board">
     <div className="title">Bingo</div>
