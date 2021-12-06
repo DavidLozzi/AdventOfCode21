@@ -110,7 +110,7 @@ const Day6 = () => {
         {fishList.filter((f, i) => i < 10000).map((fish, index) => {
           const randx = Math.random() * window.innerWidth
           const randy = Math.random() * window.innerHeight
-          return <div className="fish" style={{ top: `${randx}px`, left: `${randy}px` }} key={`${fish}-${index}`}/>
+          return <div className="fish" style={{ top: `${randy}px`, left: `${randx}px` }} key={`${fish}-${index}`}/>
         })}
         <div className="fish-counter">Day {day}<br /> {fishList.length} fishies<br /><a href="#stop" onClick={() => setStopped(true)}>stop</a> - <a href="#clear" onClick={clearFish}>clear</a></div>
       </div>}
