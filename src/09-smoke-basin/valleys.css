@@ -1,0 +1,10 @@
+.valleyRow {
+  display: flex;
+  height: 10px;
+  font-size: 12px;
+}
+.valleyCell {
+  width: 10px;
+  font-size: 10px;
+  background-color: rgb(24, 72, 121, 0.4)
+}
