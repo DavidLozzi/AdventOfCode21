@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/AdventOfCode21/static/css/main.c58fe078.chunk.css",
-    "main.js": "/AdventOfCode21/static/js/main.c6e73cf0.chunk.js",
-    "main.js.map": "/AdventOfCode21/static/js/main.c6e73cf0.chunk.js.map",
-    "runtime-main.js": "/AdventOfCode21/static/js/runtime-main.e4ef601a.js",
-    "runtime-main.js.map": "/AdventOfCode21/static/js/runtime-main.e4ef601a.js.map",
+    "main.css": "/AdventOfCode21/static/css/main.e84594d8.chunk.css",
+    "main.js": "/AdventOfCode21/static/js/main.6c529b4c.chunk.js",
+    "main.js.map": "/AdventOfCode21/static/js/main.6c529b4c.chunk.js.map",
+    "runtime-main.js": "/AdventOfCode21/static/js/runtime-main.3cffb4dc.js",
+    "runtime-main.js.map": "/AdventOfCode21/static/js/runtime-main.3cffb4dc.js.map",
     "static/js/2.c505381c.chunk.js": "/AdventOfCode21/static/js/2.c505381c.chunk.js",
     "static/js/2.c505381c.chunk.js.map": "/AdventOfCode21/static/js/2.c505381c.chunk.js.map",
-    "static/js/3.8f0b03b9.chunk.js": "/AdventOfCode21/static/js/3.8f0b03b9.chunk.js",
-    "static/js/3.8f0b03b9.chunk.js.map": "/AdventOfCode21/static/js/3.8f0b03b9.chunk.js.map",
+    "static/js/3.af7dd37d.chunk.js": "/AdventOfCode21/static/js/3.af7dd37d.chunk.js",
+    "static/js/3.af7dd37d.chunk.js.map": "/AdventOfCode21/static/js/3.af7dd37d.chunk.js.map",
     "index.html": "/AdventOfCode21/index.html",
-    "static/css/main.c58fe078.chunk.css.map": "/AdventOfCode21/static/css/main.c58fe078.chunk.css.map",
+    "static/css/main.e84594d8.chunk.css.map": "/AdventOfCode21/static/css/main.e84594d8.chunk.css.map",
     "static/js/2.c505381c.chunk.js.LICENSE.txt": "/AdventOfCode21/static/js/2.c505381c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e4ef601a.js",
+    "static/js/runtime-main.3cffb4dc.js",
     "static/js/2.c505381c.chunk.js",
-    "static/css/main.c58fe078.chunk.css",
-    "static/js/main.c6e73cf0.chunk.js"
+    "static/css/main.e84594d8.chunk.css",
+    "static/js/main.6c529b4c.chunk.js"
   ]
 }
