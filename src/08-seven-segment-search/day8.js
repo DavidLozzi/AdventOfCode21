@@ -48,7 +48,7 @@ const Day8 = () => {
   */
   React.useEffect(() => {
     if (first && puzzleInput) {
-      console.warn('secomnd puzzle')
+      console.warn('second puzzle')
       puzzleInput.forEach(p => {
         const numberMap = { // positions referring to above map
           a: '',
@@ -104,7 +104,6 @@ const Day8 = () => {
             savePosition.push(first)
           }
           if (!Object.values(numberMap).some(v => v === second)) {
-            console.log('pushing', second)
             savePosition.push(second)
           }
           if (!Object.values(numberMap).some(v => v === third)) {
@@ -114,8 +113,6 @@ const Day8 = () => {
             savePosition.push(fourth)
           }
           if (!Object.values(numberMap).some(v => v === fifth)) {
-
-            console.log('pushing', fifth)
             savePosition.push(fifth)
           }
           if (!Object.values(numberMap).some(v => v === sixth)) {
@@ -124,8 +121,20 @@ const Day8 = () => {
           if (!Object.values(numberMap).some(v => v === seventh)) {
             savePosition.push(seventh)
           }
-          numberMap.e = savePosition[1]
-          numberMap.g = savePosition[0]
+          // now have to align them properly
+          const { a, b, d, f } = numberMap;
+          const fiveRegex = new RegExp(`[${a}${b}${d}${f}]`, 'ig') // ignoring G for now
+          const five = signals.find(s => s.length === 5 && s.match(fiveRegex))
+          if (five.indexOf(savePosition[0]) > -1) { // this is the bottom line g
+            console.log('first', five)
+            numberMap.g = savePosition[0]
+            numberMap.e = savePosition[1]
+          } else { // its bottom line is the other
+            console.log('second', five)
+            numberMap.g = savePosition[1]
+            numberMap.e = savePosition[0]
+
+          }
         }
         console.log(numberMap)
         const { a, b, c, d, e, f, g } = numberMap;
@@ -160,7 +169,7 @@ ${e}    ${f}
           const theNumber = Object.keys(numberDef).find(key => {
             const numValue = numberDef[key]
             const outputRegex = new RegExp(`\\b[${output}]{${output.length}}\\b`, 'ig')
-            console.log('matching', numValue, 'to', output, outputRegex, numValue.match(outputRegex))
+            // console.log('matching', numValue, 'to', output, outputRegex, numValue.match(outputRegex))
             return numValue.match(outputRegex)
           })
           return total + theNumber
