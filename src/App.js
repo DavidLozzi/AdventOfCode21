@@ -9,6 +9,7 @@ import Day7 from './07-treachery-of-whales/day7'
 import Day8 from './08-seven-segment-search/day8'
 import Day9 from './09-smoke-basin/day9'
 import Day10 from './10-syntax-scoring/day10'
+import Day14 from './14-extended-polymerization/day14'
 
 import './App.css';
 
@@ -47,6 +48,9 @@ function App() {
         break;
       case 'day10':
         setSelectedDayComponent(<Day10 />)
+        break;
+      case 'day14':
+        setSelectedDayComponent(<Day14 />)
         break;
       default:
         setSelectedDayComponent(null);
@@ -119,6 +123,8 @@ function App() {
         <button onClick={() => setSelectedDay('day8')}>Day 8 - Seven Segment Search</button>
         <button onClick={() => setSelectedDay('day9')}>Day 9 - Smoke Basin  ▶️</button>
         <button onClick={() => setSelectedDay('day10')}>Day 10 - Syntax Scoring</button>
+        one... two... skip a few
+        <button onClick={() => setSelectedDay('day14')}>Day 14 - Extended Polymerization</button>
       </div>}
     </div>
  </div>
